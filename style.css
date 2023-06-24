@@ -1,0 +1,110 @@
+:root {
+    /* Colors */
+    --color-primary-1-base: #4d96a9;
+    --color-primary-2-base: #855fb1;
+
+    --color-primary-1-lighter: #71C0D4;
+    --color-primary-2-lighter: #b18bdd;
+    
+    --color-primary-1-light: #8fe3f9;
+    --color-primary-2-light: #d9b8ff;
+
+    --color-secondary-1: #fafafa;
+    --color-secondary-2: #87879d;
+    --color-secondary-3: #28283d;
+
+    --color-secondary-2-25: #87879d40;
+
+    /* Typography */
+    --ff-base: 'Red Hat Display', sans-serif;
+
+    --fw-regular: 500;
+    --fw-bold: 900;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+h1, h2 {
+    font-family: var(--ff-base);
+    font-weight: var(--fw-bold);
+    text-align: center;
+    color: var(--color-secondary-3);
+}
+
+h1 {
+    font-size: 2.5rem;
+    line-height: 1.1em;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 1.125em;
+}
+
+p {
+    font-family: var(--ff-base);
+    font-weight: var(--fw-regular);
+    font-size: 1rem;
+    line-height: 1.625em;
+    text-align: center; 
+    color: var(--color-secondary-2);
+}
+
+p.accent-text {
+    font-weight: var(--fw-bold);
+    font-size: 1rem;
+    line-height: 1.625em;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-primary-1-base);
+}
+
+/* Button styles */
+.primary-btn {
+    font-family: var(--ff-base);
+    font-weight: var(--fw-bold);
+    font-size: 1rem;
+    color: var(--color-secondary-1);
+
+    text-decoration: none;
+    padding: 1rem 2.5rem;
+    border-radius: 2rem;
+    transition: background-color 0.25s ease-out;
+}
+
+.btn-small {
+    padding: 1rem 1.813rem;
+}
+
+.btn-color-1 {
+    background-color: var(--color-primary-1-base);
+}
+
+.btn-color-1:hover {
+    background-color: var(--color-primary-1-lighter);
+}
+
+.btn-color-1 .version {
+    color: var(--color-primary-1-light);
+}
+
+.btn-color-2 {
+    background-color: var(--color-primary-2-base);
+}
+
+.btn-color-2:hover {
+    background-color: var(--color-primary-2-lighter);
+}
+
+.btn-color-2 .version {
+    color: var(--color-primary-2-light);
+}
